@@ -28,3 +28,4 @@ int main()
     cin.get();
     return 0;
 }
+// перша зміна
