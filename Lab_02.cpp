@@ -10,16 +10,15 @@ using namespace std;
 
 int main()
 {
-    double m;  // вхідний параметр
-    double n;  // вхідний параметр
-    double z1; // результат обчислення 1-го виразу
-    double z2; // результат обчислення 2-го виразу
+    double alpha; // вхідний параметр
+    double z1;    // результат обчислення 1-го виразу
+    double z2;    // результат обчислення 2-го виразу
 
-    cout << "m = "; cin >> m;
-    cout << "n = "; cin >> n;
+    cout << "alpha = "; cin >> alpha;
 
-    z1 = ((n - 1) * sqrt(n) - (m - 1) * sqrt(m)) / (sqrt(n * n * n * m) + m * n + n * n - n);
-    z2 = (sqrt(n) - sqrt(m)) / n;
+    z1 = (sin(2 * alpha) + sin(5 * alpha) - sin(3 * alpha)) /
+         (cos(alpha) + 1 - 2 * sin(2 * alpha) * sin(2 * alpha));
+    z2 = 2 * sin(alpha);
 
     cout << endl;
     cout << "z1 = " << z1 << endl;
@@ -28,7 +27,3 @@ int main()
     cin.get();
     return 0;
 }
-// перша зміна
-// друга зміна
-// зміна в branch_02
-// друга зміна в branch_02
